@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+href="signup.css">
+<title>
+Lets Coding Sign up
+</title>
+<script type="text/javascript">
+
+    function validateForm() {
+    var valid = true;
+    if(document.inputForm.username.value==""){
+    alert("Username is empty");
+    document.inputForm.username.focus();
+    valid=false; }
+    else if(document.inputForm.nickname.value==""){
+    alert("Nickname is empty");
+    document.inputForm.nickname.focus();
+    valid=false; }
+    else if(document.inputForm.email.value==""){
+    alert("Email is empty");
+    document.inputForm.email.focus();
+    valid=false; }
+    else if(document.inputForm.password.value==""){
+    alert("Password is empty");
+    document.inputForm.password.focus();
+    valid=false; }
+    else{
+    if(document.inputForm.email.value.indexOf("@")==-1||document.inputForm.email.value.indexOf(".")==-1){
+    alert("Please Enter valid email, e.g:info@yahoo.com");
+    document.inputForm.email.focus();
+    valid=false; }
+    }
+    return valid;
+    }
+    
+    
+    </script>
+</head>
+
+<body >
+    <img  id="weblogo" src="logo lets code.png" width="300" height="300"/>  
+
+<div id="allform">
+<form name ="inputForm" action="Homepage.html" onsubmit="return validateForm()">
+ <div id="usernametxt" style="top:320px; left:533px;"><label>Username:</label></div>
+<input  style="top:310px; left:620px;" name="username" type="text" placeholder="username"  /></br>
+
+<div id="nicknametxt" style="top:380px; left:533px;"><label>Nickname:</label></div>
+<input style="top:370px; left:620px;" name="nickname" type="text" placeholder="nickname"  /></br>
+
+ <div id="emailtxt"style="top:440px; left:533px;" ><label>Email:</label></div>
+<input style="top:430px; left:620px;" name="email" type="text" placeholder="email@example.com"  /></br>
+
+ <div id="passtext" style="top:500px; left:533px;"><label>Password:</label></div>
+<input  style="top:490px; left:620px;" name="password" type="password" placeholder="password"  /></br>
+
+ <div style="top:560px; left:533px;" id="gendertext"><label>Gender:</label></div>
+   <div style="position:absolute; top:560px; left:620px;" id="genderlist" required>
+       <select id="gender"style="width:180px;">
+           <option>Male</option>
+           <option>Female</option>
+           <option>Other</option>
+       </select>
+   </div>
+
+<input style="top:555px; left:850px;" name="signupbutton" type="submit" value="signup" />
+
+</form>
+</div>
+
+<div id="contact" style="position:absolute;top:620px;left:460px;">
+    <a href="https://www.facebook.com">
+    <img src="fbicon.png" alt="Facebook" height=30px width=30px></a>
+    <a href="https://www.twitter.com" alt="twitter">
+    <img src="twicon.png" height=30px width=30px></a>
+    <a href="https://www.gmail.com">
+    <img src="gmicon.png" alt="Gmail" height=30px width=30px></a>
+    </div>
+</body>
+</html>

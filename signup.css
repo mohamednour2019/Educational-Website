@@ -1,0 +1,59 @@
+
+body{
+  background-image:url("signupbackground.png");
+  background-position: absolute;
+  background-position-x: 130px;
+  background-position-y:-90px ;
+  }
+
+   input[type="text"],input[type="password"],select
+    {
+      
+          width: 350px;
+          height: 30px;
+          padding: 5px;
+          position: absolute;
+          border: 1px solid #45e04c ;
+          border-radius: 10px;
+      
+    }
+
+
+ input[type="submit"]
+    {
+      width:130px ;
+      background-color:#45e04c;
+      color: white;
+      padding: 12px 0px 12px 0px;
+      position:absolute;
+      border: none;
+      text-size-adjust:15px ;
+      border-radius: 15px;
+    }
+    input[type="submit"]:hover
+    {
+      background-color:#45e04c ;
+      cursor:pointer;
+
+    }
+	 #usernametxt,#passtext,#gendertext,#nicknametxt,#emailtxt
+    {
+      color:#45e04c  ;
+      position:absolute;
+    }
+	
+	 #allform
+   {
+     margin: 350px 250px 0px 100px ;
+	 text-align:center;
+   }
+   #allform
+   {
+    text-align:center;
+   }
+   #weblogo
+   {
+     position:absolute;
+     top:-40px;
+     left:20px;
+   }

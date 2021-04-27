@@ -1,0 +1,50 @@
+body{
+    background-image:url("Loginfdfd_v15.jpg");
+    background-position: absolute;
+    background-position-x: 130px;
+    background-position-y:-90px ;
+    }
+   input[type="text"],input[type="password"],select
+    {
+        width: 350px;
+        height: 30px;
+        padding: 5px;
+        position: absolute;
+        border: 1px solid #45e04c ;
+        border-radius: 10px;
+    }
+
+
+ input[type="submit"],input[type="button"]
+    {
+      width:130px ;
+      background-color:#45e04c;
+      color: white;
+      padding: 12px 0px 12px 0px;
+      position:absolute;
+      border: none;
+      text-size-adjust:15px ;
+      border-radius: 15px;
+    }
+    input[type="submit"],input[type="button"]:hover
+    {
+      background-color:#45e04c ;
+      cursor:pointer;
+
+    }
+	 #emailtext,#passtext
+    {
+      color:#45e04c  ;
+      position:absolute;
+    }
+	
+	 #allform
+   {
+	 text-align:center;
+   }
+   #weblogo
+   {
+     position:absolute;
+     top:-40px;
+     left:20px;
+   }

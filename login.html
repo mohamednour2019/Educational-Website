@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+href="login.css">
+<title>
+Lets Coding log in
+</title>
+
+<script type="text/javascript">
+
+    function validateForm() {
+    var valid = true;
+    if(document.inputForm.email.value==""){
+    alert("Email is empty");
+    document.inputForm.email.focus();
+    valid=false; }
+    else if(document.inputForm.password.value==""){
+    alert("Password is empty");
+    document.inputForm.password.focus();
+    valid=false; }
+    else{
+    if(document.inputForm.email.value.indexOf("@")==-1||document.inputForm.email.value.indexOf(".")==-1){
+    alert("Please Enter valid email, e.g:info@yahoo.com");
+    document.inputForm.email.focus();
+    valid=false; }
+    }
+    return valid;
+    }
+    
+    </script>
+</head>
+
+
+<body >
+ <img  id="weblogo" src="logo lets code.png" width="300" height="300"/>  
+
+<form id="allform" name="inputForm" onSubmit="return validateForm()" action="Homepage.html">
+ <div id="emailtext" style="top:360px; left:557px;"><label>Email:</label></div>
+<input style="top:350px; left:620px;"  name="email" type="text" placeholder="email@example.com"  /></br>
+
+ <div id="passtext" style="top:420px; left:533px;"><label>Password:</label></div>
+<input style="top:410px; left:620px;" name="password" type="password" placeholder="password"  /></br>    
+
+<input  type="submit" value="login" name="loignbutton" style="top:520px;left:630px;"/>
+
+<a href="signup.html"><input  type="button" value="signup" style="top:520px;left:840px;"/></a>
+
+<label id="forgetpass" style="position:absolute; top:470px;left:860px;"><a href="#" style="text-decoration:none ;">Forgot password?</a></label>
+<input id="checkbox" type="checkbox" style="position:absolute; top:470px;left:630px;"/>
+<label for="checkbox" style="position:absolute; top:470px;left:660px;" >Remember me</label>
+</div>
+</form>
+
+<div id="contact" style="position:absolute;top:600px;left:730px;">
+<a href="https://www.facebook.com">
+<img src="fbicon.png" alt="Facebook" height=42px width=42px></a>
+<a href="https://www.twitter.com" alt="twitter">
+<img src="twicon.png" height=42px width=42px></a>
+<a href="https://www.gmail.com">
+<img src="gmicon.png" alt="Gmail" height=42px width=42px></a>
+</div>
+</body>
+</html>

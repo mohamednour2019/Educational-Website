@@ -1,0 +1,76 @@
+body{
+    background-image:url("newbakgroundc.png");
+    background-size:cover;
+    background-attachment:cover;
+    background-repeat: fixed;
+    }
+    
+    #courselogo{
+        position:absolute;
+        top:250px ;
+        left:620px;
+     }
+
+     #basicstxt,#advancedtxt
+     {
+        color: #4a5d8b; 
+        width:400px;
+        position:absolute;
+        text-align: center;
+        font-size:40px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      
+     }
+     
+     #freetxtbasic,#paidtxtbasic,  #paidtxtadvanced,#freetxtadvanced
+     {
+      color: #4a5d8b; 
+      width:150px;
+      position:absolute;
+      font-size:30px;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     }
+      input[type="button"]
+    {
+      background-color:#b3eaff;
+      color: #4a5d8b;
+      padding: 20px 0px 20px 0px;
+      text-align:center ;
+      border: none;
+      width:150px;
+      border-radius: 80px;
+      position:absolute;
+    }
+    input[type="button"]:hover
+    {
+      background-color:#a8def2 ;
+      cursor:pointer;
+      border-radius:50px ;
+      PADDING:22PX;
+    }
+   #navbtn
+   {
+      background-color:#b3eaff;
+      color: #4a5d8b;
+      padding: 10px 0px 10px 0px;
+      text-align:center ;
+      
+      border: none;
+      width:100px;
+      border-radius: 10px;
+      position: absolute;
+      top:30px;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #navbtn:hover
+   {
+    background-color:#a8def2 ;
+    cursor:pointer;
+    border-radius:4px ;
+   }
+   #weblogo
+   {
+     position:absolute;
+     top:-40px;
+     left:20px;
+   }
